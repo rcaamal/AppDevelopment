@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#FD9F66C6"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tv_show_poster_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="4dp"
+
+            app:layout_constraintStart_toStartOf="parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#FD9F66C6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FD9F66C6"
+                android:text="@string/textViewOrder"
+                android:textAlignment="center"
+                android:textColor="#FDF5F5F6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/textFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/enter_first_name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/textLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#FDF5F5F6"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/textLastName"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/TypeView"
+                    android:layout_width="0dp"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_type_of_cake" />
+
+                <Spinner
+                    android:id="@+id/spinnerCakeType"
+                    android:layout_width="0dp"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:splitMotionEvents="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/NumberView"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity"
+                    android:textColor="#FDF5F5F6" />
+
+                <Spinner
+                    android:id="@+id/spinnerNumberofCakes"
+                    android:layout_width="187dp"
+                    android:textColor="#FDF5F5F6"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/SizeView"
+                    android:layout_width="0dp"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/size_of_cake" />
+
+                <Spinner
+                    android:id="@+id/spinnerCakeSize"
+                    android:layout_width="0dp"
+                    android:spinnerMode="dialog"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/designView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_weight="1"
+                    android:text="@string/will_there_be_a_design" />
+
+                <Spinner
+                    android:id="@+id/spinnerChooseDesign"
+                    android:layout_width="0dp"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/textCakeDesign"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autofillHints=""
+                    android:gravity="top|start"
+                    android:hint="@string/textCakeDesign"
+                    android:inputType=""
+                    android:lines="8"
+                    android:maxLines="10"
+                    android:textColor="#FDF5F5F6"
+                    android:minLines="6"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/deliveryView"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_weight="1"
+                    android:text="@string/will_this_cake_be_delivered" />
+
+                <Spinner
+                    android:id="@+id/spinnerCakeDelivery"
+                    android:layout_width="0dp"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FDF5F5F6"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/textPostlAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:textColor="#FDF5F5F6"
+                    android:ems="10"
+                    android:hint="@string/enter_your_address"
+                    android:inputType="textPostalAddress"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="40dp">
+
+                <Button
+                    android:id="@+id/buttonOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FF6E16AC"
+                    android:textColor="#FDF5F5F6"
+                    android:text="@string/submit_order" />
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

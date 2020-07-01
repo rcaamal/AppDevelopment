@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "928222688299",
+    "firebase_url": "https://cakes-d60e3.firebaseio.com",
+    "project_id": "cakes-d60e3",
+    "storage_bucket": "cakes-d60e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928222688299:android:f60b4ea892a3e1997ae66e",
+        "android_client_info": {
+          "package_name": "com.classwork.cakeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928222688299-83cffs5cc3q9h7lt29cjhujss6nsnha5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkz46fGJtVJAW9_rmZ0-0rVVPU175SfnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928222688299-83cffs5cc3q9h7lt29cjhujss6nsnha5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

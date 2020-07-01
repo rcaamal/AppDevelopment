@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FD9F66C6"
+    tools:context=".CreateAccountActivity">
+    <EditText
+        android:id="@+id/et_first_name"
+        style="@style/viewCustom"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:textColor="#FDF5F5F6"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/et_last_name"
+        style="@style/viewCustom"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:textColor="#FDF5F5F6"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/viewCustom"
+        android:textColor="#FDF5F5F6"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/viewCustom"
+        android:textColor="#FDF5F5F6"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="" />
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/viewCustom"
+        android:background="@color/colorPrimary"
+        android:text="@string/create_act"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>
